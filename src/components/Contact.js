@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "react-router-dom";
 
 export default function Contact() {
   return (
@@ -13,22 +12,19 @@ export default function Contact() {
         <div class="row">
           {/* <!--Grid column--> */}
 
-          <div class="col-md-9 mb-md-0 mb-5">
+          <div class="">
             <p class="text-center w-responsive mx-auto mb-5">
-              Do you have any questions? Please do not hesitate to contact me
-              directly.
+              Enter your information and lets connect!{" "}
             </p>
             <form
               id="contact-form"
               name="contact-form"
-              action="mail.php"
-              method="POST"
+              // action="mailto:dj.mebratu@gmail.com"
+              // method="POST"
             >
-              {/* <!--Grid row--> */}
               <div class="row">
-                {/* <!--Grid column--> */}
                 <div></div>
-                <div class="col-md-6">
+                <div class="col md-6">
                   <div class="md-form mb-0">
                     <input
                       type="text"
@@ -100,7 +96,8 @@ export default function Contact() {
 
             <div class="text-center text-md-left">
               <a
-                class="btn btn-primary"
+                href="mailto:dj.mebratu@gmail.com"
+                class="btn btn-secondary"
                 onclick="document.getElementById('contact-form').submit();"
               >
                 Send
@@ -115,8 +112,9 @@ export default function Contact() {
                 </li>
 
                 <li>
-                  <i class="fas fa-phone mt-4 fa-2x"></i>
-                  <p>1(619)642-4443</p>
+                  <i class="d-flex justify-content-center">
+                    <p>1(619)642-4443</p>
+                  </i>
                 </li>
 
                 <li>
@@ -133,8 +131,12 @@ export default function Contact() {
 
         {/* <!--Section: Contact v.2-->  */}
 
-        <div className="justify-content-center">
-          <a to="https://www.linkedin.com/dgebrie">
+        <div className="d-flex justify-content-center">
+          <a
+            href="https://www.linkedin.com/in/dgebrie"
+            target="_blank"
+            rel="noreferrer"
+          >
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="50"
@@ -146,7 +148,11 @@ export default function Contact() {
             </svg>
           </a>
 
-          <a to="https://www.github.com/linkedin">
+          <a
+            href="https://www.github.com/dgebrie"
+            target="_blank"
+            rel="noreferrer"
+          >
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="50"
