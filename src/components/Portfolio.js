@@ -82,7 +82,7 @@ export default function Portfolio() {
               >
                 Github link
               </a>
-              <a href="#" class="card-link text-secondary">
+              <a href="#" class="card-link text-secondary">q
                 Deployed link
               </a>
             </div>
