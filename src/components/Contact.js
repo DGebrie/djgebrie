@@ -4,14 +4,11 @@ export default function Contact() {
   return (
     <div
       className="d-flex justify-content-center"
-      style={{ backgroundColor: "#D0D0D0" }}
+      // style={{ backgroundColor: "#D0D0D0" }}
     >
       {/* <!--Section: Contact v.2--> */}
       <section class="mb-4" style={{ padding: 150 }}>
-        {/* <!--Section heading--> */}
-
-        {/* <!--Section description--> */}
-
+        <h1 className="d-flex justify-content-center">Contact</h1>
         <div class="row">
           {/* <!--Grid column--> */}
 
@@ -41,9 +38,7 @@ export default function Contact() {
                     </label>
                   </div>
                 </div>
-                {/* <!--Grid column--> */}
 
-                {/* <!--Grid column--> */}
                 <div class="col-md-6">
                   <div class="md-form mb-0">
                     <input
@@ -57,11 +52,8 @@ export default function Contact() {
                     </label>
                   </div>
                 </div>
-                {/* <!--Grid column--> */}
               </div>
-              {/* <!--Grid row--> */}
 
-              {/* <!--Grid row--> */}
               <div class="row">
                 <div class="col-md-12">
                   <div class="md-form mb-0">
@@ -77,11 +69,8 @@ export default function Contact() {
                   </div>
                 </div>
               </div>
-              {/* <!--Grid row--> */}
 
-              {/* <!--Grid row--> */}
               <div class="row">
-                {/* <!--Grid column--> */}
                 <div class="col-md-12">
                   <div class="md-form">
                     <textarea
@@ -95,7 +84,6 @@ export default function Contact() {
                   </div>
                 </div>
               </div>
-              {/* <!--Grid row--> */}
             </form>
 
             <div class="text-center text-md-left">
@@ -108,7 +96,7 @@ export default function Contact() {
               </a>
             </div>
           </div>
-          <div class="status"></div>
+          {/* <div class="status"></div> */}
         </div>
       </section>
     </div>

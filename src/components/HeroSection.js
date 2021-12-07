@@ -27,6 +27,7 @@ function HeroSection() {
           <div style={{ padding: 150 }}>
             <div>
               <h1 className="display-4">Dejen Gebrie</h1>
+
               <div className="">
                 <Typical
                   steps={["Hello World", 300, ""]}
@@ -40,12 +41,6 @@ function HeroSection() {
               </div>
             </div>
           </div>
-
-          {/* <div style={{ padding: 50 }} id="scrollspyHeading4">
-          
-
-            <Contact />
-          </div> */}
         </div>
       </div>
     </>

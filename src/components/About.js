@@ -1,10 +1,7 @@
 export default function About() {
   return (
     <>
-      <p>
-        I'm a Software Engineer based out of Phoenix, AZ. I enjoy exploring new
-        tools in tech and binge watching classic 90's shows.
-      </p>
+      <p>I'm a Software Engineer based out of Phoenix, AZ. ADD MORE INFO</p>
       <div className="d-flex justify-content-center">
         <a
           href="https://www.linkedin.com/in/dgebrie"

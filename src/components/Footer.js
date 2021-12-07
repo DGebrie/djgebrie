@@ -5,8 +5,8 @@ export default function Footer() {
     <>
       {/* <!-- Footer --> */}
       <footer
-        class="text-center text-lg-start bg-light text-muted"
-        style={{ padding: 60 }}
+        // class="text-center text-lg-start bg-light text-muted"
+        style={({ padding: 60 }, { backgroundColor: "" })}
       >
         {/* <!-- Section: Links  --> */}
         <section class="">
@@ -21,36 +21,6 @@ export default function Footer() {
                 </h6>
                 <p></p>
               </div>
-              {/* <!-- Grid column --> */}
-
-              {/* <!-- Grid column --> */}
-              {/* <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4"> */}
-              {/* <!-- Links --> */}
-              {/* <h6 class="text-uppercase fw-bold mb-4">Products</h6>
-                <p>
-                  <a href="#!" class="text-reset">
-                    Angular
-                  </a>
-                </p>
-                <p>
-                  <a href="#!" class="text-reset">
-                    React
-                  </a>
-                </p>
-                <p>
-                  <a href="#!" class="text-reset">
-                    Vue
-                  </a>
-                </p>
-                <p>
-                  <a href="#!" class="text-reset">
-                    Laravel
-                  </a>
-                </p>
-              </div> */}
-              {/* <!-- Grid column --> */}
-
-              {/* <!-- Grid column --> */}
 
               {/* <!-- Grid column --> */}
               <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">

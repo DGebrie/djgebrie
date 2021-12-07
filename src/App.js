@@ -10,26 +10,30 @@ import Contact from "./components/Contact";
 function App() {
   return (
     <>
-      <div className="">
-        <Router>
-          <NavBar />
-        </Router>
+      {/* <div style={{ backgroundColor: "#D0D0D0" }}> */}
+      <div style={{ padding: 20 }}>
+        <div className="">
+          <Router>
+            <NavBar />
+          </Router>
+        </div>
+        <div>
+          <Router>
+            <HeroSection />
+          </Router>
+        </div>
+        <div>
+          <Router>
+            <Contact />
+          </Router>
+        </div>
+        <div>
+          <Router>
+            <Footer />
+          </Router>
+        </div>
       </div>
-      <div>
-        <Router>
-          <HeroSection />
-        </Router>
-      </div>
-      <div>
-        <Router>
-          <Contact />
-        </Router>
-      </div>
-      <div>
-        <Router>
-          <Footer />
-        </Router>
-      </div>
+      {/* </div> */}
     </>
   );
 }

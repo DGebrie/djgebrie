@@ -1,38 +1,44 @@
-import React from "react";
-
+import React, { useState } from "react";
+import { FiSun, FiMoon } from "react-icons/fi";
 // import { Link } from "react-router-dom";
 
 export default function NavBar() {
+  const [theme, setTheme] = useState("light");
+
   return (
     <>
       <section id="header">
         {/* <div className="container-fluid"> */}
-        <div
-          className="fixed-top"
-          //  style={{ backgroundColor: "white" }}
-        >
-          <nav className="navbar navbar-expand-lg navbar-dark ">
+        <div className="fixed-top" style={{ padding: "" }}>
+          <nav className="navbar navbar-expand-lg  ">
             {/* <div className="container"> */}
-            <a href="#" className="navbar-brand" rel="noopener noreferrer">
-              Logo
-            </a>
-            <button
-              className="navbar-toggler"
-              type="button"
-              data-target="#navbarSupportedContent"
-              data-toggle="collapse"
-              aria-controls="navbarSupportedContent"
-              aria-expanded="false"
-              aria-label="Toggle Navigation"
-            >
-              <span className="navbar-toggler-icon"></span>
-            </button>
 
             <div
               className="collapse navbar-collapse"
               id="navbarSupportedContent"
+              style={{ padding: "15px" }}
             >
               <ul className="navbar-nav ml-auto">
+                <li>
+                  {theme === "dark" && (
+                    <FiSun
+                      onClick={() => {
+                        setTheme("light");
+                        document.body.style.backgroundColor = "white";
+                        document.body.style.color = "black";
+                      }}
+                    />
+                  )}
+                  {theme === "light" && (
+                    <FiMoon
+                      onClick={() => {
+                        setTheme("dark");
+                        document.body.style.backgroundColor = "black";
+                        document.body.style.color = "white";
+                      }}
+                    />
+                  )}
+                </li>
                 <li className="nav-item active">
                   <a href="#" className="nav-link text-secondary">
                     Home
