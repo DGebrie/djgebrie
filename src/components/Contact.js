@@ -2,9 +2,12 @@ import React from "react";
 
 export default function Contact() {
   return (
-    <div className="d-flex justify-content-center">
+    <div
+      className="d-flex justify-content-center"
+      style={{ backgroundColor: "#D0D0D0" }}
+    >
       {/* <!--Section: Contact v.2--> */}
-      <section class="mb-4">
+      <section class="mb-4" style={{ padding: 150 }}>
         {/* <!--Section heading--> */}
 
         {/* <!--Section description--> */}

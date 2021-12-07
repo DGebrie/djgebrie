@@ -4,21 +4,10 @@ export default function Footer() {
   return (
     <>
       {/* <!-- Footer --> */}
-      <footer class="text-center text-lg-start bg-light text-muted">
-        {/* <!-- Section: Social media --> */}
-        <section class="d-flex justify-content-center justify-content-lg-between p-4 ">
-          {/* <!-- Left --> */}
-          <div class="me-5 d-none d-lg-block">
-            <span></span>
-          </div>
-          {/* <!-- Left --> */}
-
-          {/* <!-- Right --> */}
-          <div></div>
-          {/* <!-- Right --> */}
-        </section>
-        {/* <!-- Section: Social media --> */}
-
+      <footer
+        class="text-center text-lg-start bg-light text-muted"
+        style={{ padding: 60 }}
+      >
         {/* <!-- Section: Links  --> */}
         <section class="">
           <div class="container text-center text-md-start mt-5">

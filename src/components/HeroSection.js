@@ -24,7 +24,7 @@ function HeroSection() {
       // tabindex="0"
       >
         <div class="row">
-          <div style={{ padding: 200 }}>
+          <div style={{ padding: 150 }}>
             <div>
               <h1 className="display-4">Dejen Gebrie</h1>
               <div className="">
