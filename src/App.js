@@ -4,6 +4,8 @@ import React from "react";
 // import { Switch } from "react-router";
 import { BrowserRouter as Router } from "react-router-dom";
 import HeroSection from "./components/HeroSection";
+import Footer from "./components/Footer";
+import Contact from "./components/Contact";
 
 function App() {
   return (
@@ -16,6 +18,16 @@ function App() {
       <div>
         <Router>
           <HeroSection />
+        </Router>
+      </div>
+      <div>
+        <Router>
+          <Contact />
+        </Router>
+      </div>
+      <div>
+        <Router>
+          <Footer />
         </Router>
       </div>
     </>
