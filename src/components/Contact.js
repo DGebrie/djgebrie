@@ -2,23 +2,21 @@ import React from "react";
 
 export default function Contact() {
   return (
-    <div
-      className="d-flex justify-content-center"
-      // style={{ backgroundColor: "#D0D0D0" }}
-    >
+    <div className="d-flex justify-content-center" id="contact">
       {/* <!--Section: Contact v.2--> */}
-      <section class="mb-4" style={{ padding: 150 }}>
-        <h1 className="d-flex justify-content-center">Contact</h1>
+      <section class="mb-4 " style={{ padding: 150 }}>
+        <h1 className="d-flex justify-content-center text-secondary">
+          Contact
+        </h1>
         <div class="row">
           {/* <!--Grid column--> */}
 
-          <div class="">
+          <div class="text-secondary">
             <p class="text-center w-responsive mx-auto mb-5">
               Any questions? Don't hesitate to reach out and I will be sure to
               get back to you in a matter of hours.
             </p>
             <form
-              id="contact-form"
               name="contact-form"
               // action="mailto:dj.mebratu@gmail.com"
               // method="POST"
@@ -85,15 +83,17 @@ export default function Contact() {
                 </div>
               </div>
             </form>
-
-            <div class="text-center text-md-left">
-              <a
+            {/* <button type="button" class="text-center text-md-left btn btn-primary">
+              Send
+            </button> */}
+            <div class="text-center text-md-left primary">
+              <button
                 href="mailto:dj.mebratu@gmail.com"
-                class="btn btn-secondary"
+                class="btn btn-primary"
                 onclick="document.getElementById('contact-form').submit();"
               >
                 Send
-              </a>
+              </button>
             </div>
           </div>
           {/* <div class="status"></div> */}

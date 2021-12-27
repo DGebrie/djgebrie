@@ -5,7 +5,7 @@ export default function Footer() {
     <>
       {/* <!-- Footer --> */}
       <footer
-        // class="text-center text-lg-start bg-light text-muted"
+        class="text-secondary"
         style={({ padding: 60 }, { backgroundColor: "" })}
       >
         {/* <!-- Section: Links  --> */}
@@ -52,7 +52,7 @@ export default function Footer() {
         </section>
 
         {/* <!-- Copyright --> */}
-        <div class="text-center p-4">© 2021 Copyright</div>
+        <div class="text-center p-4 text-primary">© 2021 Copyright</div>
         {/* <!-- Copyright --> */}
       </footer>
       {/* <!-- Footer --> */}

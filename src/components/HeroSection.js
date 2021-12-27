@@ -1,36 +1,39 @@
-import React from "react";
-import "../App.css";
-import Typical from "react-typical";
-import Contact from "./Contact";
-import Portfolio from "./Portfolio";
+import React, { useState } from "react";
 import About from "./About";
-import Skills from "./Skills";
+import Typical from "react-typical";
+import "../App.css";
+
+// import { FiSun, FiMoon } from "react-icons/fi";
+// import Contact from "./Contact";
+// import Portfolio from "./Portfolio";
+// import Skills from "./Skills";
 
 function HeroSection() {
+  const [theme, setTheme] = useState("light");
   return (
     <>
-      {/* <div
-        data-bs-spy="scroll"
-        data-bs-target="#navbar-example2"
-        data-bs-offset="0"
-        class="scrollspy-example"
-        tabindex="0"
-      ></div> */}
-      <div
-      // data-bs-spy="scroll"
-      // data-bs-target="#navbar-example2"
-      // data-bs-offset="0"
-      // class="scrollspy-example"
-      // tabindex="0"
-      >
+      <div>
         <div class="row">
           <div style={{ padding: 150 }}>
             <div>
-              <h1 className="display-4">Dejen Gebrie</h1>
-
               <div className="">
+                <h1 className="display-4 col text-secondary d-flex justify-content-center">
+                  Dejen Gebrie
+                </h1>
+              </div>
+
+              <div className="text-secondary d-flex justify-content-center">
                 <Typical
-                  steps={["Hello World", 300, ""]}
+                  steps={[
+                    "Web Developer",
+                    400,
+                    "Full-Stack Software Engineer",
+                    400,
+                    "Frontend",
+                    400,
+                    "Backend",
+                    400,
+                  ]}
                   loop={Infinity}
                   wrapper="p"
                 />

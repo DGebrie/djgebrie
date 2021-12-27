@@ -1,11 +1,12 @@
 import "./App.css";
-import NavBar from "./components/NavBar";
 import React from "react";
 // import { Switch } from "react-router";
 import { BrowserRouter as Router } from "react-router-dom";
 import HeroSection from "./components/HeroSection";
 import Footer from "./components/Footer";
 import Contact from "./components/Contact";
+import NavBar1 from "./components/NavBar1";
+// import NavBar from "./components/NavBar";
 
 function App() {
   return (
@@ -14,7 +15,7 @@ function App() {
       <div style={{ padding: 20 }}>
         <div className="">
           <Router>
-            <NavBar />
+            <NavBar1 />
           </Router>
         </div>
         <div>

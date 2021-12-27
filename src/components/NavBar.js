@@ -19,37 +19,39 @@ export default function NavBar() {
               style={{ padding: "15px" }}
             >
               <ul className="navbar-nav ml-auto">
-                <li>
-                  {theme === "dark" && (
-                    <FiSun
-                      onClick={() => {
-                        setTheme("light");
-                        document.body.style.backgroundColor = "white";
-                        document.body.style.color = "black";
-                      }}
-                    />
-                  )}
-                  {theme === "light" && (
-                    <FiMoon
-                      onClick={() => {
-                        setTheme("dark");
-                        document.body.style.backgroundColor = "black";
-                        document.body.style.color = "white";
-                      }}
-                    />
-                  )}
-                </li>
-                <li className="nav-item active">
+                <li className="nav-item active" style={{ paddingLeft: 120 }}>
                   <a href="#" className="nav-link text-secondary">
                     Home
                   </a>
                 </li>
                 <li className="nav-item active">
-                  <a
-                    href="#scrollspyHeading4"
-                    className="nav-link text-secondary"
-                  >
+                  <a href="#contact" className="nav-link text-secondary">
                     Contact
+                  </a>
+                </li>
+                <li className="nav-item active">
+                  <a
+                    className="nav-item active col-md-auto"
+                    style={{ paddingLeft: 300 }}
+                  >
+                    {theme === "dark" && (
+                      <FiSun
+                        onClick={() => {
+                          setTheme("light");
+                          document.body.style.backgroundColor = "white";
+                          document.body.style.color = "#6c757d";
+                        }}
+                      />
+                    )}
+                    {theme === "light" && (
+                      <FiMoon
+                        onClick={() => {
+                          setTheme("dark");
+                          document.body.style.backgroundColor = "#282c36";
+                          document.body.style.color = "#6c757d";
+                        }}
+                      />
+                    )}
                   </a>
                 </li>
               </ul>
